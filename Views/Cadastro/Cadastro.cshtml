@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Cadastro | Lobby";
+}
+
+<div class='main-div'>
+
+    <div class="logo">
+        <img src="../../assets/icons/LobbyLogo.png" alt="">
+    </div>
+
+
+    <form action="" method="post">
+        <div class="div-input">
+            <label for="email">Email:</label><br />
+            <input name="senha" type="email" />
+        </div>
+        <div class="div-input">
+            <label for="senha">Senha:</label><br />
+            <input name="senha" type="password" />
+        </div>
+        <div class="div-input">
+            <label for="telefone">Telefone:</label><br />
+            <input id="phonemask" name="telefone" type="text" />
+        </div>
+        <div class="div-btn-login">
+            <button class="btn-login" onclick="cadastro()">Cadastrar</button>
+            <p>Registre-se ou caso ja tenha um cadastro faca <a href="../../index.html">login</a></p>
+        </div>
+    </form>
+
+
+</div>

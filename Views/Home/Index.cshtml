@@ -1,0 +1,45 @@
+﻿@model Usuario
+@{
+    ViewData["Title"] = "Login | Lobby";
+}
+
+<body onload="loadModal()">
+    <div class='main-div'>
+
+        <div class="logo">
+            <img src="./src/icons/LobbyLogo.png" alt="">
+        </div>
+
+
+       
+
+        <form action="" method="post">
+            <div class="div-input">
+                <label for="email">Email:</label><br />
+                <input name="senha" type="email" />
+            </div>
+            <div class="div-input">
+                <label for="senha">Senha:</label><br />
+                <input name="senha" type="password" />
+            </div>
+            <div class="div-btn-login">
+                <button class="btn-login" onclick="teste()">Login</button>
+                <p>Entre com seu usuário e senha ou <a href="./Views/Cadastro/Index.cshtml">Registre-se</a></p>
+            </div>
+        </form>
+
+        <div class="divModal">
+            <dialog>
+                <div>
+                    <!-- <button class="closeModal">Fechar</button> -->
+                    <img src="./src/icons/close-black.png" class="closeModal" alt="">
+                </div>
+            </dialog>
+        </div>
+
+
+
+    </div>
+
+    <script src="./pages/login/index.js"></script>
+</body>
